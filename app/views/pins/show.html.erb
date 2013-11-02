@@ -8,11 +8,7 @@
       </div>
       <div class="panel-body">
         <p><%= @pin.description %></p>
-<<<<<<< HEAD
         <p><strong><%= @pin.user.username if @pin.user %></strong></p>
-=======
-        <p><strong><%= @pin.user.name if @pin.user %></strong></p>
->>>>>>> ebc11f4fd17b6f36d67bba94b1e4e47ec78116f2
 
         <% if @pin.user == current_user %>
                <%= link_to edit_pin_path(@pin) do %>

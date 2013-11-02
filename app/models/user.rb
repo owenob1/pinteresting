@@ -1,4 +1,3 @@
-<<<<<<< HEAD
     class User < ActiveRecord::Base
 
       attr_accessor :login
@@ -19,15 +18,3 @@
 
       has_many :pins     
     end
-=======
-class User < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
-
-   has_many :pins
-
-   validates :name, presence: true
-end
->>>>>>> ebc11f4fd17b6f36d67bba94b1e4e47ec78116f2
