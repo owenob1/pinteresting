@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131102015412) do
+=======
+ActiveRecord::Schema.define(version: 20131102012727) do
+>>>>>>> ebc11f4fd17b6f36d67bba94b1e4e47ec78116f2
 
   create_table "pins", force: true do |t|
     t.string   "description"
@@ -40,7 +44,10 @@ ActiveRecord::Schema.define(version: 20131102015412) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+<<<<<<< HEAD
     t.string   "username"
+=======
+>>>>>>> ebc11f4fd17b6f36d67bba94b1e4e47ec78116f2
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
